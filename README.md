@@ -1,17 +1,13 @@
-![HEADER](assets/img/banner.png)
+Einfache Website mit "Glassmorphism"-Thema
+Nur index.html-Seite hinzugefügt (alles andere folgt später)
 
-## Simple "glassmorphism" themed website
-- `Only index.html page added (rest all later)`
-- `Edit this template for your own use (give credit)`
+Bearbeite diese Vorlage für deinen eigenen Gebrauch (bitte mit Quellenangabe)
 
-## Special Thanks to :-
-- `Adobe Photoshop, Figma, (UI Designing)`
-- `Vercel & Github (Hosting)`
+Besonderer Dank an:
+Metanet oder Vercel & GitHub (für das Hosting)
 
-## Bug right now
-- `Responsive Display (on mobile view the alignments are not correct) (i will fix this issue asap)`
+Aktueller Fehler:
+Responsives Design (in der mobilen Ansicht sind die Ausrichtungen nicht korrekt) (ich werde dieses Problem so bald wie möglich beheben)
 
-## Contribution
-- `Contributions are always welcome`
-- `Add sign-off tag on your commit before sending pull request`
-- `Use correct commit message`
+Füge bei deinem Commit ein Sign-off-Tag hinzu, bevor du eine Pull-Request sendest
+Verwende eine aussagekräftige Commit-Nachricht
