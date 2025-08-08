@@ -50,13 +50,13 @@ header
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left: 1px solid rgba(255,255,255,0.5);
 }
-header .logo
-{
-    color: 3a405a;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 1.4rem;
-}
+    header .logo 
+    {
+        color: #3a405a;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1.4rem;
+    }
 header ul
 {
     display: flex;
@@ -142,7 +142,7 @@ header ul li a.active
 .sci
 {
     position: absolute;
-    right: -25;
+    right: -25px;
     display: flex;
     justify-content: center;
     align-items: center;
