@@ -44,13 +44,13 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(0 0 0);
+    background: rgb(0, 0, 0);
     box-shadow: 0 15px 35px rgb(255 255 255 / 50%);
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgb(255 255 255 / 0%);
+    border: 1px solid rgba(0, 0, 0, 0);
     border-top: 1px solid rgb(255 255 255 / 0%);
-    border-left: 1px solid rgb(255 255 255 / 0%);
+    border-left: 1px solid rgba(0, 0, 0, 0);
 }
     header .logo 
     {
@@ -94,7 +94,7 @@ header ul li a.active
     border-left: 1px solid rgb(255 255 255 / 0%);
     padding: 40px;
     padding-left: 110px;
-    text-shadow:0 0 #ffffff
+    text-shadow:0 0 #ffffff;
 }
 .container h2
 {
@@ -107,7 +107,7 @@ header ul li a.active
     padding-top: 15px;
     font-weight: 500;
     color: #ffffff;
-    text-shadow:0 0 #ffffff
+    text-shadow:0 0 #ffffff;
 }
 .content a
 {
