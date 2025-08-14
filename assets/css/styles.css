@@ -144,38 +144,47 @@ header ul li a.active {
     }
 }
 
+/* Container für die Social Icons */
 .sci {
-    position: relative;           /* Gültige Positionierung */
+    position: absolute;              /* Ermöglicht exakte Positionierung */
+    top: 50%;                        /* Vertikal mittig */
+    left: 30px;                      /* Abstand vom linken Rand */
+    transform: translateY(-50%);     /* Korrektur für vertikale Mitte */
     display: flex;
     flex-direction: column;
-    align-items: center;          /* Zentriert die Icons horizontal */
-    margin-top: 30px;             /* Abstand nach oben */
+    align-items: center;
+    z-index: 10;                     /* Sicherstellen, dass Icons sichtbar bleiben */
 }
 
+/* Entfernt Standardlistenstil */
 .sci li {
     list-style: none;
 }
 
+/* Stil für die einzelnen Icons */
 .sci li a {
     text-decoration: none;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin: 5px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Kontrast */
+    margin: 3px 0;                   /* Weniger Abstand zwischen Icons */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dezenter Schatten */
+    transition: transform 0.3s ease;
 }
 
+/* Bild im Icon */
 .sci li a img {
     transform: scale(0.6);
-    transition: 0.7s;
+    transition: transform 0.3s ease;
 }
 
+/* Hover-Effekt */
 .sci li:hover a img {
-    transform: scale(0.6) rotate(10deg);
+    transform: scale(0.65) rotate(10deg);
 }
 
 .copyrightText {
