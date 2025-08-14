@@ -103,6 +103,13 @@ header ul li a.active {
     color: #ffffff;
 }
 
+.content p2 {
+    font-size: 1.4em;
+    padding-top: 15px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
 .content a {
     display: inline-block;
     padding: 10px 25px;
