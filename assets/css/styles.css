@@ -134,9 +134,21 @@ header ul li a.active {
     box-shadow: 0 15px 30px rgb(255 255 255);
 }
 
+.imgBx {
+    display: flex;
+    justify-content: center;     /* Zentriert das Bild horizontal */
+    align-items: center;         /* Zentriert es vertikal, falls nötig */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;          /* Verhindert Schweben durch absolute Positionierung */
+}
+
 .imgBx img {
-    max-width: 300px;
-    animation: animate 8s cubic-bezier(0.95, -0.47, 0.29, 1.4) infinite;
+    max-width: 300px;            /* Begrenzte Breite für gute Darstellung */
+    height: auto;                /* Automatische Höhe für Proportionen */
+    display: block;              /* Entfernt Lücken unter dem Bild */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: sanfter Schatten */
+    animation: none;             /* Entfernt die schwebende Animation */
 }
 
 @keyframes animate {
