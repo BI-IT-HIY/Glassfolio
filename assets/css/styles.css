@@ -1,29 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-* 
-{
+
+* {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
     font-family: Poppins, product-sans;
 }
-section
-{
+
+/* Verhindert automatische Anpassung auf kleineren Bildschirmen */
+body {
+    min-width: 1200px;
+    background-color: #000000e0;
+}
+
+/* Hauptbereich */
+section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000e0;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding: 50px;
 }
-.container
-{
-    position: relative;
-    width: calc(100% - 100px);
+
+/* Container mit fester Breite */
+.container {
+    width: 1200px; /* feste Größe */
+    margin: 0 auto; /* zentrieren */
     min-height: calc(100vh - 280px);
-    min-height: 300px;
     background: rgb(0 0 0);
     text-shadow: 0 0 #ffffff;
     box-shadow: 0 15px 35px rgb(255 255 255);
@@ -34,8 +39,7 @@ section
     padding: 50px;
 }
 
-header
-{
+header {
     position: absolute;
     top: -40px;
     right: 20px;
@@ -48,116 +52,101 @@ header
     box-shadow: 0 15px 35px rgb(255 255 255 / 50%);
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-top: 1px solid rgb(255 255 255 / 0%);
-    border-left: 1px solid rgba(0, 0, 0, 0);
 }
-    header .logo 
-    {
-        color: #ffffff;
-        font-weight: 600;
-        text-decoration: none;
-        font-size: 1.4rem;
-    }
-header ul
-{
+
+header .logo {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+header ul {
     display: flex;
 }
-header ul li
-{
+
+header ul li {
     list-style: none;
     margin: 0 10px;
 }
-header ul li a
-{
+
+header ul li a {
     text-decoration: none;
     font-weight: 500;
     color: #ffffff;
     padding: 8px 15px;
     border-radius: 25px;
 }
+
 header ul li a:hover,
-header ul li a.active
-{
+header ul li a.active {
     background: #ffffff;
     box-shadow: 0 5px 10px rgb(255 255 255);
 }
-.content
-{
-    /* transform: translateX(-100px); */
-    /* max-width: 780px; */
+
+.content {
     box-shadow: 0 15px 30px rgb(255 255 255 / 58%);
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgb(255 255 255 / 0%);
-    border-top: 1px solid rgb(252 252 252 / 0%);
-    border-left: 1px solid rgb(255 255 255 / 0%);
-    padding: 40px;
-    padding-left: 110px;
-    text-shadow:0 0 #ffffff;
+    padding: 40px 110px;
 }
-.container h2
-{
+
+.container h2 {
     font-size: 2em;
     color: #ffffff;
 }
-.content p
-{
+
+.content p {
     font-size: 1.4em;
     padding-top: 15px;
     font-weight: 500;
     color: #ffffff;
-    text-shadow:0 0 #ffffff;
 }
-.content a
-{
-   display: inline-block;
-   padding: 10px 25px;
-   background: #ffffff; 
-   color: #ffffff;
-   margin-top: 20px;
-   border-radius: 30px;
-   font-size: 1.2em;
-   font-weight: 500;
-   text-decoration: none;
-   box-shadow: 0 5px 10px rgb(255 255 255);
+
+.content a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ffffff;
+    color: #000000;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgb(255 255 255);
 }
-.content a:hover
-{
-    background: rgb(255, 255, 255);
+
+.content a:hover {
+    background: rgb(200, 200, 200);
     box-shadow: 0 15px 30px rgb(255 255 255);
 }
-.imgBx img
-{
+
+.imgBx img {
     max-width: 300px;
     animation: animate 8s cubic-bezier(0.95, -0.47, 0.29, 1.4) infinite;
 }
-@keyframes animate
-{
-    0%,100%
-    {
+
+@keyframes animate {
+    0%, 100% {
         transform: translateY(50px);
     }
-    50%
-    {
+    50% {
         transform: translateY(100px);
     }
 }
-.sci
-{
+
+.sci {
     position: absolute;
     right: -25px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
-.sci li
-{
+
+.sci li {
     list-style: none;
 }
-.sci li a
-{
+
+.sci li a {
     text-decoration: none;
     width: 50px;
     height: 50px;
@@ -169,115 +158,35 @@ header ul li a.active
     margin: 5px 0;
     box-shadow: 0 5px 10px rgb(255 255 255);
 }
-.sci li a img
-{
+
+.sci li a img {
     transform: scale(0.6);
     transition: 0.7s;
 }
-.sci li:hover a img
-{
+
+.sci li:hover a img {
     transform: scale(0.6) rotate(360deg);
 }
-.copyrightText
-{
+
+.copyrightText {
     position: absolute;
     bottom: 30px;
     left: 50px;
     color: #ffffff;
 }
 
-.copyrightText a
-{
+copyrightText a {
     text-decoration: none;
     color: #ffffff;
 }
-.copyrightText a:hover
-{
+
+copyrightText a:hover {
     color: #ffffff;
 }
+/* Keine @media Queries – feste Breite bleibt */
 
-@media (max-width: 1200px)
-{
-    .container 
-    {
-        position: relative;
-        width: calc(100% - 20px);
-    }
-}
 
-@media (max-width: 992)
-{
-    section
-    {
-        padding: 50px 10px 10px;
-    }
-    .container
-    {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-    .container .content
-    {
-        transform: translateX(0px);
-        max-width: 100%;
-        padding: 30px;
-        margin-top: -40px;
-    }
-header
-{
-position: relative;
-flex-direction: column;
-width: 100%;
-top: -60px;
-padding: 20px;
-right: 0;
-left: 0;
-}
-
-header ul
-{
-    margin-top: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-header ul li
-{
-    margin: 2px;
-}
-header ul li a
-{
-    display: inline-block;
-}
-.imgBx
-{
-    margin-bottom: 50px;
-}
-.content a
-{
-    font-size: 1em;
-    padding: 10px 20px;
-}
-@keyframes animate
-{
-    0%,100%
-    {
-        transform: translateY(-20px);
-    }
-    50%
-    {
-        transform: translateY(20px);
-    }
-}
-.sci
-{
-    position: relative;
-    flex-direction: row;
-    left: 0;
-    }
-}
-
-    /* devanagari */
+/* devanagari */
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
