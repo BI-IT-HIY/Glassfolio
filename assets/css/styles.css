@@ -139,7 +139,7 @@ header ul li a.active {
     justify-content: center;        /* Zentriert das Bild horizontal */
     align-items: center;            /* Zentriert das Bild vertikal (falls nötig) */
     margin: 30px 0;                 /* Kombiniert margin-top und margin-bottom */
-    position: relative;             /* Ermöglicht gezielte Positionierung von Kind-Elementen */
+    position: center;             /* Ermöglicht gezielte Positionierung von Kind-Elementen */
     flex-shrink: 0;                 /* Verhindert, dass die Box bei Flex-Layouts schrumpft */
 }
 
