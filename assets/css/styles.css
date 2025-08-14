@@ -146,7 +146,7 @@ header ul li a.active {
 .imgBx img {
     max-width: 300px;               /* Begrenzte Breite für gute Darstellung */
     width: 100%;                    /* Skaliert innerhalb der Box */
-    height: auto;                   /* Proportionale Höhe */
+    height: center;                   /* Proportionale Höhe */
     display: block;                 /* Entfernt Lücken unter dem Bild */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sanfter Schatten für Tiefe */
     animation: none;                /* Entfernt die schwebende Animation */
