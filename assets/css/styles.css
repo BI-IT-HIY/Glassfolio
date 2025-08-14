@@ -146,7 +146,7 @@ header ul li a.active {
 
 /* Container für die Social Icons */
 .sci {
-    position: absolute;              /* Ermöglicht exakte Positionierung */
+    position: center;              /* Ermöglicht exakte Positionierung */
     top: 50%;                        /* Vertikal mittig */
     left: 30px;                      /* Abstand vom linken Rand */
     transform: translateY(-50%);     /* Korrektur für vertikale Mitte */
