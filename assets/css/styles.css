@@ -144,7 +144,7 @@ header ul li a.active {
 }
 
 .imgBx img {
-    max-width: 300px;               /* Begrenzte Breite für gute Darstellung */
+    max-width: 250px;               /* Begrenzte Breite für gute Darstellung */
     width: 100%;                    /* Skaliert innerhalb der Box */
     height: auto;                   /* Proportionale Höhe */
     display: block;                 /* Entfernt Lücken unter dem Bild */
