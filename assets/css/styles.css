@@ -184,7 +184,7 @@ header ul li a.active {
 
 /* Hover-Effekt */
 .sci li:hover a img {
-    transform: scale(0.6) rotate(20deg);
+    transform: scale(0.65) rotate(20deg);
 }
 
 .copyrightText {
