@@ -136,19 +136,21 @@ header ul li a.active {
 
 .imgBx {
     display: flex;
-    justify-content: center;     /* Zentriert das Bild horizontal */
-    align-items: center;         /* Zentriert es vertikal, falls nötig */
-    margin-top: 30px;
-    margin-bottom: 30px;
-    position: relative;          /* Verhindert Schweben durch absolute Positionierung */
+    justify-content: center;        /* Zentriert das Bild horizontal */
+    align-items: center;            /* Zentriert das Bild vertikal (falls nötig) */
+    margin: 30px 0;                 /* Kombiniert margin-top und margin-bottom */
+    position: relative;             /* Ermöglicht gezielte Positionierung von Kind-Elementen */
+    flex-shrink: 0;                 /* Verhindert, dass die Box bei Flex-Layouts schrumpft */
 }
 
 .imgBx img {
-    max-width: 300px;            /* Begrenzte Breite für gute Darstellung */
-    height: auto;                /* Automatische Höhe für Proportionen */
-    display: block;              /* Entfernt Lücken unter dem Bild */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: sanfter Schatten */
-    animation: none;             /* Entfernt die schwebende Animation */
+    max-width: 300px;               /* Begrenzte Breite für gute Darstellung */
+    width: 100%;                    /* Skaliert innerhalb der Box */
+    height: auto;                   /* Proportionale Höhe */
+    display: block;                 /* Entfernt Lücken unter dem Bild */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sanfter Schatten für Tiefe */
+    animation: none;                /* Entfernt die schwebende Animation */
+    object-fit: contain;            /* Sorgt für saubere Darstellung bei transparentem Hintergrund */
 }
 
 @keyframes animate {
