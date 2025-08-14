@@ -102,12 +102,13 @@ header ul li a.active {
     padding-top: 15px;
     font-weight: 500;
     color: #ffffff;
+    text-shadow: 0 0 rgb(255, 255, 255);
 }
 
 .content p2 {
     font-size: 1em;
     padding-top: 15px;
-    font-weight: 500;
+    font-weight: 300;
     color: #ffffff;
     text-shadow: 0 0 rgb(255, 255, 255);
 }
