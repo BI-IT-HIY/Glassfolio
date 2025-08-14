@@ -41,7 +41,7 @@ section {
 
 header {
     position: absolute;
-    top: -40px;
+    top: 20px; /* Statt -40px: positiver Wert bringt den Header nach unten */
     right: 20px;
     left: 20px;
     padding: 20px 50px;
@@ -53,6 +53,7 @@ header {
     border-radius: 20px;
     backdrop-filter: blur(10px);
 }
+
 
 header .logo {
     color: #ffffff;
@@ -80,8 +81,8 @@ header ul li a {
 
 header ul li a:hover,
 header ul li a.active {
-    background: #ffffff;
-    box-shadow: 0 5px 10px rgb(255 255 255);
+    background: #000000;
+    box-shadow: 0 5px 10px rgb(255, 255, 255);
 }
 
 .content {
@@ -104,10 +105,11 @@ header ul li a.active {
 }
 
 .content p2 {
-    font-size: 1.4em;
-    padding-top: 15px;
-    font-weight: 500;
+    font-size: 1em;
+    padding-top: 10px;
+    font-weight: 300;
     color: #ffffff;
+    text-shadow: 0 0 rgb(255, 255, 255);
 }
 
 .content a {
