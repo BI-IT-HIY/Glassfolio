@@ -106,11 +106,14 @@ header ul li a.active {
 }
 
 .content p2 {
-    font-size: 1em;
+    display: block;                 /* Macht <p2> wie ein Absatz */
+    font-size: 1em;                 /* Entspricht 16px, kannst auch z. B. 1.1em nehmen */
     padding-top: 15px;
     font-weight: 300;
     color: #ffffff;
-    text-shadow: 0 0 rgb(255, 255, 255);
+    line-height: 1.6;               /* Verbessert Lesbarkeit */
+    margin-bottom: 15px;           /* Abstand nach unten */
+    text-shadow: 0 0 2px #fff;     /* Sichtbarer, subtiler Glow-Effekt */
 }
 
 .content a {
