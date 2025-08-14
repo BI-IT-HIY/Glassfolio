@@ -145,10 +145,11 @@ header ul li a.active {
 }
 
 .sci {
-    position: absolute;
-    right: -25px;
+    position: relative;           /* Gültige Positionierung */
     display: flex;
     flex-direction: column;
+    align-items: center;          /* Zentriert die Icons horizontal */
+    margin-top: 30px;             /* Abstand nach oben */
 }
 
 .sci li {
@@ -165,7 +166,7 @@ header ul li a.active {
     align-items: center;
     border-radius: 50%;
     margin: 5px 0;
-    box-shadow: 0 5px 10px rgb(255 255 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Kontrast */
 }
 
 .sci li a img {
@@ -174,7 +175,7 @@ header ul li a.active {
 }
 
 .sci li:hover a img {
-    transform: scale(0.6) rotate(360deg);
+    transform: scale(0.6) rotate(10deg);
 }
 
 .copyrightText {
