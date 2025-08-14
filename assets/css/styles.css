@@ -1,227 +1,260 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Poppins, product-sans;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Product Sans', sans-serif;
 }
 
-/* Verhindert automatische Anpassung auf kleineren Bildschirmen */
+/* Hintergrund und Basis */
 body {
-    min-width: 1200px;
-    background-color: #000000e0;
+  background-color: #000000e0;
+  color: #ffffff;
 }
 
 /* Hauptbereich */
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px;
 }
 
-/* Container mit fester Breite */
+/* Container */
 .container {
-    width: 1200px; /* feste Größe */
-    margin: 0 auto; /* zentrieren */
-    min-height: calc(100vh - 280px);
-    background: rgb(0 0 0);
-    text-shadow: 0 0 #ffffff;
-    box-shadow: 0 15px 35px rgb(255 255 255);
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #000;
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
 }
 
+/* Header */
 header {
-    position: absolute;
-    top: 20px; /* Statt -40px: positiver Wert bringt den Header nach unten */
-    right: 20px;
-    left: 20px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(0, 0, 0);
-    box-shadow: 0 15px 35px rgb(255 255 255 / 50%);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  z-index: 100;
 }
-
 
 header .logo {
-    color: #ffffff;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.4rem;
 }
 
 header ul {
-    display: flex;
+  display: flex;
 }
 
 header ul li {
-    list-style: none;
-    margin: 0 10px;
+  list-style: none;
+  margin: 0 10px;
 }
 
 header ul li a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #ffffff;
-    padding: 8px 15px;
-    border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 header ul li a:hover,
 header ul li a.active {
-    background: #000000;
-    box-shadow: 0 5px 10px rgb(255, 255, 255);
+  background-color: #000;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
 }
 
+/* Inhalt */
 .content {
-    box-shadow: 0 15px 30px rgb(255 255 255 / 58%);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    padding: 40px 110px;
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 40px 110px;
+  flex: 1;
 }
 
 .container h2 {
-    font-size: 2em;
-    color: #ffffff;
+  font-size: 2em;
+  color: #ffffff;
 }
 
 .content p {
-    font-size: 1.4em;
-    padding-top: 15px;
-    font-weight: 500;
-    color: #ffffff;
-    text-shadow: 0 0 rgb(255, 255, 255);
+  font-size: 1.4em;
+  padding-top: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: 0 0 2px #fff;
 }
 
-.content p2 {
-    display: block;                 /* Macht <p2> wie ein Absatz */
-    font-size: 1em;                 /* Entspricht 16px, kannst auch z. B. 1.1em nehmen */
-    padding-top: 15px;
-    font-weight: 300;
-    color: #ffffff;
-    line-height: 1.6;               /* Verbessert Lesbarkeit */
-    margin-bottom: 15px;           /* Abstand nach unten */
-    text-shadow: 0 0 2px #fff;     /* Sichtbarer, subtiler Glow-Effekt */
+.secondary-text {
+  font-size: 1em;
+  padding-top: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-shadow: 0 0 2px #fff;
 }
 
+/* Button */
 .content a {
-    display: inline-block;
-    padding: 10px 25px;
-    background: #ffffff;
-    color: #000000;
-    margin-top: 20px;
-    border-radius: 30px;
-    font-size: 1.2em;
-    font-weight: 500;
-    text-decoration: none;
-    box-shadow: 0 5px 10px rgb(255 255 255);
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  color: #000000;
+  margin-top: 20px;
+  border-radius: 30px;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .content a:hover {
-    background: rgb(200, 200, 200);
-    box-shadow: 0 15px 30px rgb(255 255 255);
+  background-color: rgb(200, 200, 200);
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.4);
 }
 
+/* Bildbox */
 .imgBx {
-    display: flex;
-    justify-content: center;        /* Zentriert das Bild horizontal */
-    align-items: center;            /* Zentriert das Bild vertikal (falls nötig) */
-    margin: 30px 0;                 /* Kombiniert margin-top und margin-bottom */
-    position: center;             /* Ermöglicht gezielte Positionierung von Kind-Elementen */
-    flex-shrink: 0;                 /* Verhindert, dass die Box bei Flex-Layouts schrumpft */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  flex-shrink: 0;
+  flex: 1;
 }
 
 .imgBx img {
-    max-width: 300px;               /* Begrenzte Breite für gute Darstellung */
-    width: 100%;                    /* Skaliert innerhalb der Box */
-    height: center;                   /* Proportionale Höhe */
-    display: block;                 /* Entfernt Lücken unter dem Bild */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sanfter Schatten für Tiefe */
-    animation: none;                /* Entfernt die schwebende Animation */
-    object-fit: contain;            /* Sorgt für saubere Darstellung bei transparentem Hintergrund */
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  animation: animate 3s ease-in-out infinite;
 }
 
+/* Animation */
 @keyframes animate {
-    0%, 100% {
-        transform: translateY(50px);
-    }
-    50% {
-        transform: translateY(100px);
-    }
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
-/* Container für die Social Icons */
+/* Social Icons */
 .sci {
-    position: center;              /* Ermöglicht exakte Positionierung */
-    top: 50%;                        /* Vertikal mittig */
-    left: 30px;                      /* Abstand vom linken Rand */
-    transform: translateY(-50%);     /* Korrektur für vertikale Mitte */
-    display: flex;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 3px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sci li a img {
+  transform: scale(0.6);
+  transition: transform 0.3s ease;
+}
+
+.sci li:hover a img {
+  transform: scale(0.65) rotate(20deg);
+}
+
+/* Copyright */
+.copyrightText {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  color: #ffffff;
+}
+
+.copyrightText a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.copyrightText a:hover {
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .imgBx img {
+    max-width: 200px;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  header ul {
     flex-direction: column;
     align-items: center;
-    z-index: 10;                     /* Sicherstellen, dass Icons sichtbar bleiben */
-}
+  }
 
-/* Entfernt Standardlistenstil */
-.sci li {
-    list-style: none;
+  header ul li {
+    margin: 5px 0;
+  }
 }
-
-/* Stil für die einzelnen Icons */
-.sci li a {
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin: 3px 0;                   /* Weniger Abstand zwischen Icons */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dezenter Schatten */
-    transition: transform 0.3s ease;
-}
-
-/* Bild im Icon */
-.sci li a img {
-    transform: scale(0.6);
-    transition: transform 0.3s ease;
-}
-
-/* Hover-Effekt */
-.sci li:hover a img {
-    transform: scale(0.65) rotate(20deg);
-}
-
-.copyrightText {
-    position: absolute;
-    bottom: 30px;
-    left: 50px;
-    color: #ffffff;
-}
-
-copyrightText a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-copyrightText a:hover {
-    color: #ffffff;
-}
-/* Keine @media Queries – feste Breite bleibt */
-
 
 /* devanagari */
 @font-face {

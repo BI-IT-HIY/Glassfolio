@@ -4,31 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Über Mich</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
     <link href="./assets/img/favi-icons/karthik.png" rel="icon" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #1f1c2c, #928dab);
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a.active {
+            border-bottom: 2px solid #fff;
+        }
+
+        .glassbox {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .glassbox h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-shadow: 0 0 5px #fff;
+        }
+
+        .file-entry {
+            margin-bottom: 25px;
+        }
+
+        .file-entry h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .file-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .file-button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
 </head>
 <body>
     <section>
         <div class="container">
             <header>
-                <a href="" class="logo">Yasin Hira</a>
-                <ul>
-                    <li><a href="https://hiy.bm-it.ch/">Home</a></li>
-                    <li><a href="ueber-mich.html" class="active">Über Mich</a></li>
-                    <li><a href="https://www.espas.ch/eingliederung/lehrstellen/">Arbeit</a></li>
-                    <li><a href="#">Projekt</a></li>
-                    <li><a href="mailto:Yasin.Hira@espas.ch">Kontakt</a></li>
-                </ul>
+                <a href="#" class="logo">Yasin Hira</a>
+                <nav>
+                    <ul>
+                        <li><a href="https://hiy.bm-it.ch/">Home</a></li>
+                        <li><a href="ueber-mich.html" class="active">Über Mich</a></li>
+                        <li><a href="https://www.espas.ch/eingliederung/lehrstellen/">Arbeit</a></li>
+                        <li><a href="#">Projekt</a></li>
+                        <li><a href="mailto:Yasin.Hira@espas.ch">Kontakt</a></li>
+                    </ul>
+                </nav>
             </header>
 
-            <div class="content">
-                <h2>Meine PDF-Dateien</h2>
-                <ul>
-                    <li><a href="Zertifikat.pdf" target="_blank" rel="noopener noreferrer">Lebenslauf.pdf</a></li>
-                    <li><a href="Zeugnis.pdf" target="_blank" rel="noopener noreferrer">Bewerbung.pdf</a></li>
-                    <li><a href="Motivationsschreiben.pdf" target="_blank" rel="noopener noreferrer">Zeugnis.pdf</a></li>
-                    <meta name="viewport" content="width=1200">
-                </ul>
+            <div class="glassbox">
+                <h2>Meine Daten</h2>
+
+                <div class="file-entry">
+                    <h3>Lebenslauf</h3>
+                    <a href="Zertifikat.pdf" target="_blank" class="file-button">Download PDF</a>
+                </div>
+
+                <div class="file-entry">
+                    <h3>Bewerbung</h3>
+                    <a href="Zeugnis.pdf" target="_blank" class="file-button">Download PDF</a>
+                </div>
+
+                <div class="file-entry">
+                    <h3>Motivationsschreiben</h3>
+                    <a href="Motivationsschreiben.pdf" target="_blank" class="file-button">Download PDF</a>
+                </div>
             </div>
         </div>
     </section>
