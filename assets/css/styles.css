@@ -36,9 +36,9 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 30px;
-    position: relative;
-    gap: 30px;
+    padding: 150px 340px;
+    position: center;
+    gap: 50px;
 }
 
 header {
@@ -97,6 +97,36 @@ header ul li a.active {
 .container h2 {
     font-size: 2em;
     color: #ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* oder deine bevorzugte Schriftart */
+    font-size: 16px;
+    color: #333;
+}
+
+.glassbox h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dokumentenliste {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dokumentenliste li {
+    margin-bottom: 2em;
+    font-size: 16px;
+    font-family: inherit;
+    color: inherit;
+}
+
+.dokumentenliste strong {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .content p {
